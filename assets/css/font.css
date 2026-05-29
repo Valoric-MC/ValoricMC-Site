@@ -1,0 +1,27 @@
+/* Font definitions */
+@font-face {
+    font-family: "Mojang";
+    src:
+        local("Mojang", "Mojang Regular"),
+        url("/assets/font/Mojang-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Mojang";
+    src:
+        local("Mojang", "Mojang Bold"),
+        url("/assets/font/Mojang-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Minecraft';
+    src:
+        local("Minecraft"),
+        url('/assets/font/Minecraft.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MinecraftFifty';
+    src:
+        local("MinecraftFifty"),
+        url('/assets/font/MinecraftFifty.otf') format('opentype');
+}
