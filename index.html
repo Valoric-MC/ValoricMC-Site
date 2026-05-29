@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>ValoricMC</title>
+  </head>
+  <body>
 
+    <div class="toast" id="toast">IP copied</div>
+
+    <nav>
+      <div class="nav-logo">
+        <img src="logo.png" alt="ValoricMC"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="nav-logo-fallback" style="display:none">ValoricMC</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#seasons">Seasons</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+
+      <div class="hero-bg">
+        <img src="bg.png" alt=""
+          onerror="this.style.display='none'">
+      </div>
+
+      <div class="hero-content">
+        <span class="tag">Season 2 Now Live</span>
+        <h1>Play.<br><span>Survive.</span><br>Valorize.</h1>
+        <p>A survival SMP with clean gameplay, quality of life plugins, and a solid community.</p>
+        <div class="btn-row">
+          <button class="btn btn-primary" onclick="copyIP()">Copy IP</button>
+          <a class="btn btn-ghost" href="https://discord.gg/4x4WhCFWKP" target="_blank">Discord</a>
+        </div>
+        <div class="status-row">
+          <div class="status-cell">
+            <small>Status</small>
+            <strong><span class="dot-green">●</span> Online</strong>
+          </div>
+          <div class="status-cell">
+            <small>Players</small>
+            <strong>{{player_count}} / {{max_players}}</strong>
+          </div>
+          <div class="status-cell">
+            <small>Season</small>
+            <strong>2</strong>
+          </div>
+          <div class="status-cell">
+            <small>Version</small>
+            <strong>{{server_version}}</strong>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="section reveal" id="features">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Features</h2>
+      <div class="grid-2">
+        <div class="feat">
+          <h3>Simple &amp; Nice</h3>
+          <p>No clutter. Just clean, vanilla-feel survival the way it should be.</p>
+        </div>
+        <div class="feat">
+          <h3>Quality of Life</h3>
+          <p>RTP, TPA, InfiniteTrades, and other QoL plugins so you spend time actually playing.</p>
+        </div>
+        <div class="feat">
+          <h3>PvP &amp; Events</h3>
+          <p>Community wars, PvP zones, and seasonal events to keep things interesting.</p>
+        </div>
+        <div class="feat">
+          <h3>Crossplay</h3>
+          <p>Java and Bedrock both supported. Bring your friends regardless of platform.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section reveal" id="seasons">
+      <span class="section-label">History &amp; Upcoming</span>
+      <h2 class="section-title">Seasons</h2>
+      <div class="timeline">
+        <div class="tl">
+          <div class="tl-num">S1</div>
+          <div>
+            <span class="tl-chip chip-done">Complete</span>
+            <h4>The Foundation</h4>
+            <p>Where ValoricMC started. Classic survival, community building, and the first wars.</p>
+          </div>
+        </div>
+        <div class="tl live">
+          <div class="tl-num">S2</div>
+          <div>
+            <span class="tl-chip chip-live">Live Now</span>
+            <h4>Simple and Nice</h4>
+            <p>Clean survival with some QoL plugins. No fluff, just good gameplay and a solid community.</p>
+          </div>
+        </div>
+        <div class="tl soon">
+          <div class="tl-num">S3</div>
+          <div>
+            <span class="tl-chip chip-soon">Coming Soon</span>
+            <h4>???</h4>
+            <p>Something is right around the corner. Stay in the Discord for the announcement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section reveal" id="faq">
+      <span class="section-label">Questions</span>
+      <h2 class="section-title">FAQ</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>Is ValoricMC crossplay?</h3>
+          <p>Yes. Java and Bedrock are both supported.</p>
+        </div>
+        <div class="faq-item">
+          <h3>When does Season 3 start?</h3>
+          <p>Very soon. Follow the Discord for the official date and details.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does the world reset each season?</h3>
+          <p>Yes, each season starts fresh with new terrain and mechanics.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is PvP enabled?</h3>
+          <p>Yes. Wars, PvP zones, and community events are all part of the experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="join-wrap reveal" id="join">
+      <h2>Ready to join?</h2>
+      <p>Season 2 is live. Season 3 is around the corner.<br>Get in before the next reset.</p>
+      <div><div class="ip-block">play.valoricmc.net</div></div>
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="copyIP()">Copy IP</button>
+        <a class="btn btn-ghost" href="https://discord.gg/4x4WhCFWKP" target="_blank">Discord</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="f-logo">
+        <img src="logo.png" alt="ValoricMC"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="f-logo-fallback" style="display:none">ValoricMC</span>
+      </div>
+      <p>ValoricMC is running on {{server_name}}</p>
+      <p>Season 2 Live &nbsp;·&nbsp; Season 3 Coming Soon</p>
+      <p>© ValoricMC 2025-2026</p>
+    </footer>
+
+    <script>
+      function copyIP() {
+        navigator.clipboard.writeText("play.valoricmc.net").then(() => {
+          const t = document.getElementById("toast");
+          t.classList.add("show");
+          setTimeout(() => t.classList.remove("show"), 2000);
+        }).catch(() => alert("play.valoricmc.net"));
+      }
+
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
+      }, { threshold: 0.08 });
+      document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+    </script>
+
+  </body>
+</html>
